@@ -7,6 +7,6 @@ COPY flask-proj.py /flask-project-docker/flask-proj.py
 
 RUN pip3 install -r /flask-project-docker/requirements.txt
 
-EXPOSE 80/udp
+EXPOSE 5000
 
 CMD [ "python3", "/flask-project-docker/flask-proj.py"]
